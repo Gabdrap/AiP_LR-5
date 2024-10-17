@@ -1,8 +1,9 @@
 #include <iostream>
 #include <Windows.h>
+#include <string>
 
 using namespace std;
-int number;
+string number;
 
 int main()
 {
@@ -17,6 +18,19 @@ int main()
 
     if (choise == 1)
     {
-        cout >> "Введите ваше число: ";
+        cout << "Введите число(оно должно быть трехзначным):    ";
+        cin >> number;
+        if (number.length() == 3)
+        {
+            for (int i = number.length(); i >= 0; i--)
+            {
+                revers = revers + str[i];
+            }
+            cout << revers;
+        }
+        else
+        {
+            cout << "Длина числа: " << number.length() << ". Пожалуйста, введите трехзначное число.";
+        }
     }
 }
