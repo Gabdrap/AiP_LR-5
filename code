@@ -4,6 +4,8 @@
 
 using namespace std;
 string number;
+string revers;
+revers = "";
 
 int main()
 {
