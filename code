@@ -5,6 +5,10 @@
 using namespace std;
 string number;
 string revers;
+int width;
+int length;
+int width_1;
+int length_1;
 
 int main()
 {
@@ -41,6 +45,27 @@ int main()
         else
         {
             cout << "Длина числа: " << number.length() << ". Пожалуйста, введите трехзначное число.";
+        }
+    }
+    if (choise == 2)
+    {
+        cout << "Введите длину конверта: ";
+        cin >> length;
+        cout << "Введите ширину конверта: ";
+        cin >> width;
+        cout << "Длина конверта: " << length << " Ширина конверта: " << width << "\n";
+        cout << "Введите длину открытки: ";
+        cin >> length_1;
+        cout << "Введите ширину открытки: ";
+        cin >> width_1;
+        cout << "Длина открытки: " << length_1 << " Ширина открытки: " << width_1 << "\n";
+        if (width > width_1 || length > length_1)
+        {
+            cout << "Открытка поместится";
+        }
+        else
+        {
+            cout << "Открытка не поместится";
         }
     }
 }
